@@ -1,4 +1,4 @@
-* {
+/* * {
     margin: 5;
     padding: 0;
 }
@@ -111,4 +111,117 @@ a:visited { text-decoration: none; }
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+}
+ */
+
+
+@media screen and (min-width: 375px){
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+
+        height: 100%;
+        width: 100%;
+        margin: 1px auto;
+
+        display: grid;
+        gap: 1px;
+
+        grid-template-columns: repeat(12, 1fr);
+        /* grid-template-areas:
+        "t t t t  t t t t  t t t t"
+        "i i i i  i i i i  i i i i"
+        "b b b b  b b b b  b b b b"
+        "d d d d  d d d d  d d d d"
+        "b b b b  b b b b  b b b b"
+        "f f f f  f f f f  f f f f" */
+    }
+
+    .container .tlf {
+        grid-area: t;
+        color: #333;
+        font-family: Inconsolata;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: -1.92px;
+        text-transform: uppercase;
+    }
+
+    .container .img{
+        grid-area: i;
+        width: 65%;
+        height: 65%;
+        border-radius: 8px;
+        background: #FFF;
+        box-shadow: 0px 2px 24px 0px rgba(0, 0, 0, 0.10);
+    }
+
+    .container .badnews {
+        grid-area: b;
+        color: var(--Gray-1, #333);
+        font-family: Space Mono;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: -1.68px;
+    }
+
+    .container .desc {
+        grid-area: d;
+        color: var(--Gray-2, #4F4F4F);
+        font-family: Space Mono;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -0.63px;
+    }
+
+    .container .btn {
+        grid-area: b;
+        width: 216px;
+        height: 68px;
+        flex-shrink: 0;
+        background: var(--Gray-1, #333);
+        color: #FFF;
+        font-family: Space Mono;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: -0.49px;
+        text-transform: uppercase;
+    }
+
+
+
+   footer {
+        color: #BDBDBD;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        padding: 24px;
+    }
+
+    a:visited { text-decoration: none; }
+
+    .name{
+        color: #BDBDBD;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
 }
